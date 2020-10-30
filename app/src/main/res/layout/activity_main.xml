@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/EditTaskTextHint"
+        android:importantForAutofill="no"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/EditTextPersonHint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="229dp"
+        android:layout_height="176dp"
+        android:layout_marginBottom="36dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:headerDayOfMonthTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:measureAllChildren="false"
+        android:minDate="01/01/2020"
+        android:startYear="2020">
+
+    </DatePicker>
+
+    <CheckBox
+        android:id="@+id/checkBoxDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/checkBoxText" />
+
+    <Button
+        android:id="@+id/addToDoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:onClick="createTaskAndUpload"
+        android:text="@string/toDoButtonText" />
+
+    <ListView
+        android:id="@+id/ListViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>
+

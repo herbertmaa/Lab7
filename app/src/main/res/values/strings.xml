@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="toDoButtonText">ADD TODO</string>
+    <string name="checkBoxText">Done</string>
+    <string name="EditTextPersonHint">Name</string>
+    <string name="EditTaskTextHint">Task</string>
+</resources>
